@@ -1,0 +1,8 @@
+1安装erl，配置path
+
+2.1安装mq
+2.2进入cmd输入如下命令可以做到对 rabbitmq的插件配置。（注意路径）
+"F:\BigSoft\mq\rabbitmq_server-3.6.5\sbin\rabbitmq-plugins.bat" enable rabbitmq_management
+2.3进入管理员cmd输入如下命令重启mq
+net stop RabbitMQ && net start RabbitMQ
+2.4监控页面	http://127.0.0.1:15672		guest		guest

@@ -1,0 +1,12 @@
+server:
+  port: 8001
+eureka:
+  client:
+    serviceUrl:   #设置注册中心的地址： 与 eureka-server 中的配置 application.yml 遥相呼应
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  zipkin:
+    base-url: http://localhost:9411
+  application:
+    name: product-data-service     #表示这个微服务本身的名称是 product-data-service
